@@ -15,6 +15,7 @@
   "dependencies": {
     "@react-pdf/renderer": "^3.4.2",
     "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
     "@tailwindcss/line-clamp": "^0.4.4",
     "axios": "^1.6.7",
     "cookies": "^0.9.1",
