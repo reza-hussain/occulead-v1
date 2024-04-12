@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const HomeCard = ({ item }) => {
+const HomeCard = ({ item }: { item: any }) => {
   return (
     <div
       key="0"
