@@ -2,10 +2,7 @@ import { useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 // images
-import {
-  OptionType,
-  SelectProps
-} from "@/types/components/formElements/Select";
+import { OptionType, SelectProps } from "types/components/formElements/Select";
 
 const Select: React.FC<SelectProps> = ({
   value = "",
