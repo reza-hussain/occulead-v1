@@ -1,4 +1,5 @@
 import React from "react";
+// @ts-ignore
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Image from "next/image";
 import { useRouter } from "next/navigation";

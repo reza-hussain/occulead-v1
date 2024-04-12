@@ -1,4 +1,5 @@
 import React from "react";
+// @ts-ignore
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 const HomeTestimonials = () => {

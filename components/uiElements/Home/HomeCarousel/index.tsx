@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+
+// @ts-ignore
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
 import banner1 from "assets/images/banner1.jpg";
