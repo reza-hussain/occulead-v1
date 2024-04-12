@@ -5,7 +5,7 @@ import {
 } from "services/apiUrl";
 
 // types
-import { SuccessResponse } from "@/types/axiosTypes";
+import { SuccessResponse } from "types/axiosTypes";
 
 export const getAllSpecialities = async (): Promise<{
   response?: SuccessResponse<any>;

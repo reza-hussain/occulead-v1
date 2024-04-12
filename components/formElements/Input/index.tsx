@@ -1,7 +1,7 @@
 import { KeyboardEvent, useEffect, useRef } from "react";
 
 // types
-import { InputProps } from "@/types/components/formElements/Input";
+import { InputProps } from "types/components/formElements/Input";
 
 const Input: React.FC<
   InputProps & React.InputHTMLAttributes<HTMLInputElement>

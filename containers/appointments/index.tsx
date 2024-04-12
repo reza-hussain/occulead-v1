@@ -9,7 +9,7 @@ import Status from "@/components/uiElements/table/status";
 import { appointmentColumns } from "@/constants/table/appointments";
 
 // types
-import { UserCookieType } from "@/types/cookies";
+import { UserCookieType } from "types/cookies";
 import ArrowDown from "@/assets/components/ArrowDown";
 import { useRouter } from "next/navigation";
 

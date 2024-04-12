@@ -10,7 +10,7 @@ import {
 } from "react-select";
 
 // types
-import { OptionType } from "@/types/components/formElements/Select";
+import { OptionType } from "types/components/formElements/Select";
 
 type ComponentProps = {
   label: string;

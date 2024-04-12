@@ -3,7 +3,7 @@ import {
   ResponseType,
   SendRequestArgs,
   SuccessResponse
-} from "@/types/axiosTypes";
+} from "types/axiosTypes";
 import { getCookie } from "@/utils/storageHelper";
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 

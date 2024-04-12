@@ -14,7 +14,7 @@ import ImageUpload from "@/components/formElements/ImageUpload";
 import { postCompany } from "@/services/company";
 
 // types
-import { OnboardingFormValues } from "@/types/containers/onboarding/formTypes";
+import { OnboardingFormValues } from "types/containers/onboarding/formTypes";
 
 interface ComponentProps {
   handleBack: () => void;

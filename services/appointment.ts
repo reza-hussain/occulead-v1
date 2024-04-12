@@ -6,8 +6,8 @@ import {
 } from "services/apiUrl";
 
 // types
-import { SuccessResponse } from "@/types/axiosTypes";
-import { AppointmentPayload } from "@/types/containers/appointments/appointmentForm";
+import { SuccessResponse } from "types/axiosTypes";
+import { AppointmentPayload } from "types/containers/appointments/appointmentForm";
 
 export const createAppointment = async (
   appointment: AppointmentPayload[]

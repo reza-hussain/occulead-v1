@@ -15,7 +15,7 @@ import { addServiceToClinic } from "@/services/clinic";
 import { createDropdownOptions } from "@/utils/applicationHelper";
 
 // types
-import { OptionType } from "@/types/components/formElements/Select";
+import { OptionType } from "types/components/formElements/Select";
 
 interface ComponentProps {
   isOpen: boolean;

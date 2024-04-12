@@ -4,7 +4,7 @@ import {
   GET_STRIPE_PRODUCTS,
   STRIPE_APPOINTMENT_CHECKOUT
 } from "./apiUrl";
-import { SuccessResponse } from "@/types/axiosTypes";
+import { SuccessResponse } from "types/axiosTypes";
 
 export const getStripeProducts = async (): Promise<{
   response?: SuccessResponse<any>;

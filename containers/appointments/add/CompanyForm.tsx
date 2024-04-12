@@ -28,8 +28,8 @@ import {
   CompanyFormValuesType,
   SelectServiceType,
   AppointmentPayload
-} from "@/types/containers/appointments/appointmentForm";
-import { OptionType } from "@/types/components/formElements/Select";
+} from "types/containers/appointments/appointmentForm";
+import { OptionType } from "types/components/formElements/Select";
 
 const defaultEmployees: DefaultEmployeesType = {
   id: "",

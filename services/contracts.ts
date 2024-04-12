@@ -1,6 +1,6 @@
 import { postRequest } from "./httpHelper";
 import { CREATE_CONTRACT, UPDATE_CONTRACT } from "./apiUrl";
-import { SuccessResponse } from "@/types/axiosTypes";
+import { SuccessResponse } from "types/axiosTypes";
 
 export const createContract = async (
   body: any

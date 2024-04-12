@@ -1,6 +1,6 @@
 // import React from 'react';
 "use client";
-import { AppointmentDetailsType } from "@/types/containers/appointments/appointmentDetails";
+import { AppointmentDetailsType } from "types/containers/appointments/appointmentDetails";
 import {
   Page,
   Text,

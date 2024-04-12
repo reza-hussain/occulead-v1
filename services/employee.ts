@@ -3,7 +3,7 @@ import { GET_EMPLOYEES, POST_EMPLOYEE } from "services/apiUrl";
 import { getRequest, postRequest } from "services/httpHelper";
 
 // types
-import { SuccessResponse } from "@/types/axiosTypes";
+import { SuccessResponse } from "types/axiosTypes";
 
 export const getEmployees = async (
   companyID?: string

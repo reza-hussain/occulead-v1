@@ -6,7 +6,7 @@ import { getCookie } from "cookies-next";
 import AddAppointmentContainer from "@/containers/appointments/add";
 
 // types
-import { UserCookieType } from "@/types/cookies";
+import { UserCookieType } from "types/cookies";
 
 const Page = ({ user }: { user: UserCookieType }) => {
   return <AddAppointmentContainer user={user} />;

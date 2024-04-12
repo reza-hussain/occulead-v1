@@ -6,7 +6,7 @@ import { getCookie } from "cookies-next";
 import ClinicDashboard from "@/containers/dashboard/clinic";
 import CompanyDashboard from "@/containers/dashboard/company";
 import { GET_ALL_APPOINTMENTS } from "@/services/apiUrl";
-import { AppointmentDetailsType } from "@/types/containers/appointments/appointmentDetails";
+import { AppointmentDetailsType } from "types/containers/appointments/appointmentDetails";
 
 type ServerProps = {
   user: {

@@ -14,7 +14,7 @@ import { serviceProviderColumns } from "@/constants/table/company/serviceProvide
 
 // services
 import { getMyClinics } from "@/services/company";
-import { ClinicObjectType } from "@/types/axiosTypes";
+import { ClinicObjectType } from "types/axiosTypes";
 import Status from "@/components/uiElements/table/status";
 
 const ServiceProvider = () => {

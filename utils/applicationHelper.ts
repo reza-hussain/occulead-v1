@@ -3,7 +3,7 @@ import { getCookie } from "cookies-next";
 
 // type DebounceFunction  = (func: () => void, delay: number) => Function;
 // types
-import { OptionType } from "@/types/components/formElements/Select";
+import { OptionType } from "types/components/formElements/Select";
 
 export const debounce: any = (func: () => void, delay: number) => {
   let timeoutId: NodeJS.Timeout;

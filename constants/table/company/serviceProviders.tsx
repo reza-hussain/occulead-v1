@@ -1,4 +1,4 @@
-import { TableColumnType } from "@/types/components/uiElements/Table";
+import { TableColumnType } from "types/components/uiElements/Table";
 
 export const serviceProviderTable = [
   {

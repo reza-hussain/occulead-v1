@@ -9,7 +9,7 @@ import MultiImageUpload from "@/components/formElements/MultiImageUpload";
 
 import { Country, City, State } from "country-state-city";
 import Select from "@/components/formElements/Select";
-import { OnboardingFormValues } from "@/types/containers/onboarding/formTypes";
+import { OnboardingFormValues } from "types/containers/onboarding/formTypes";
 import TextArea from "@/components/formElements/TextArea";
 import Button from "@/components/uiElements/button";
 import { postClinic } from "@/services/clinic";

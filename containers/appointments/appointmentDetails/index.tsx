@@ -19,7 +19,7 @@ import { createCheckout } from "services/stripe";
 import { updatePayment } from "services/appointment";
 
 // types
-import { AppointmentDetailsType } from "@/types/containers/appointments/appointmentDetails";
+import { AppointmentDetailsType } from "types/containers/appointments/appointmentDetails";
 
 // assets
 import ArrowDown from "@/assets/components/ArrowDown";

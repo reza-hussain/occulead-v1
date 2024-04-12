@@ -1,4 +1,4 @@
-import { SuccessResponse } from "@/types/axiosTypes";
+import { SuccessResponse } from "types/axiosTypes";
 import { LOGIN_USER, REGISTER_USER, VERIFY_EMAIL } from "./apiUrl";
 import { postRequest } from "./httpHelper";
 

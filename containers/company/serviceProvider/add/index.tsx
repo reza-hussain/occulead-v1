@@ -9,7 +9,7 @@ import { useStateValue } from "@/context/StateProvider";
 
 // services
 import { getFilteredClinics } from "@/services/company";
-import { ClinicObjectType } from "@/types/axiosTypes";
+import { ClinicObjectType } from "types/axiosTypes";
 import RequestModal from "./RequestModal";
 
 const AddServiceProvider = () => {

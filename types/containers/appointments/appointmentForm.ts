@@ -1,4 +1,4 @@
-import { OptionType } from "@/types/components/formElements/Select";
+import { OptionType } from "types/components/formElements/Select";
 
 export type DefaultEmployeesType = {
   id: string;

@@ -1,6 +1,6 @@
 // types
 import Button from "@/components/uiElements/button";
-import { OnboardingFormValues } from "@/types/containers/onboarding/formTypes";
+import { OnboardingFormValues } from "types/containers/onboarding/formTypes";
 
 interface ComponentType {
   formValues: OnboardingFormValues;

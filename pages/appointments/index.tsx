@@ -7,7 +7,7 @@ import { getCookie } from "cookies-next";
 import { GET_ALL_APPOINTMENTS } from "@/services/apiUrl";
 
 // types
-import { UserCookieType } from "@/types/cookies";
+import { UserCookieType } from "types/cookies";
 
 interface PageProps {
   appointment: any;

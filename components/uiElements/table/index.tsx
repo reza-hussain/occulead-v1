@@ -6,7 +6,7 @@ import {
   RowProps,
   TableColumnType,
   TableProps
-} from "@/types/components/uiElements/Table";
+} from "types/components/uiElements/Table";
 
 const Table: React.FC<TableProps> = ({
   columnData,

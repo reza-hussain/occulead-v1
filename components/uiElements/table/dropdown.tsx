@@ -4,7 +4,7 @@ import React from "react";
 import Select from "@/components/formElements/Select";
 
 // types
-import { OptionType } from "@/types/components/formElements/Select";
+import { OptionType } from "types/components/formElements/Select";
 
 interface ComponentProps {
   options: OptionType[];

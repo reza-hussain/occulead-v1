@@ -1,4 +1,4 @@
-import { SuccessResponse } from "@/types/axiosTypes";
+import { SuccessResponse } from "types/axiosTypes";
 import { GET_USER } from "./apiUrl";
 import { getRequest } from "./httpHelper";
 
