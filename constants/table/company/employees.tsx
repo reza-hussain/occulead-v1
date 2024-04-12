@@ -1,4 +1,4 @@
-// import ArrowDown from "app/components/Icons/ArrowDown";
+// import ArrowDown from "components/Icons/ArrowDown";
 
 export const employeesTable = [
   {

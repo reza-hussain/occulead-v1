@@ -1,4 +1,4 @@
-import Status from "app/components/Table/Status";
+import Status from "components/Table/Status";
 
 export const appointmentDatesTable = [
   {
