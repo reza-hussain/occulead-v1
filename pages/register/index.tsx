@@ -1,8 +1,8 @@
 import { FormEvent, SyntheticEvent, useState } from "react";
 import Image from "next/image";
 
-import { Google, AppleLogo, EmailIcon, Lock } from "@/assets/icons/index";
-import { registerUser } from "@/services/auth";
+import { Google, AppleLogo, EmailIcon, Lock } from "assets/icons/index";
+import { registerUser } from "services/auth";
 
 const Register = () => {
   const [loading, setLoading] = useState(false);

@@ -1,6 +1,6 @@
-import AppointmentDetails from "@/containers/appointments/appointmentDetails";
-import { GET_APPOINTMENT } from "@/services/apiUrl";
-import { getSSRHeaders } from "@/utils/applicationHelper";
+import AppointmentDetails from "containers/appointments/appointmentDetails";
+import { GET_APPOINTMENT } from "services/apiUrl";
+import { getSSRHeaders } from "utils/applicationHelper";
 import { GetServerSidePropsContext } from "next";
 import React from "react";
 

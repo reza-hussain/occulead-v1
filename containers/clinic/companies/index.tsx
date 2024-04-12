@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 
 // components
-import SubContainer from "@/components/layouts/subContainer";
-import Table from "@/components/uiElements/table";
+import SubContainer from "components/layouts/subContainer";
+import Table from "components/uiElements/table";
 
 // constants
-import { companiesColumn } from "@/constants/table/clinic/company";
+import { companiesColumn } from "constants/table/clinic/company";
 
 // services
-import { getMyCompanies } from "@/services/clinic";
-import TableDropdown from "@/components/uiElements/table/dropdown";
-import { updateContract } from "@/services/contracts";
-import Tabs from "@/components/uiElements/tabs";
+import { getMyCompanies } from "services/clinic";
+import TableDropdown from "components/uiElements/table/dropdown";
+import { updateContract } from "services/contracts";
+import Tabs from "components/uiElements/tabs";
 
 const statusOptions = [
   {

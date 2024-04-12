@@ -1,10 +1,10 @@
 import React from "react";
-import AppointmentContainer from "@/containers/appointments";
+import AppointmentContainer from "containers/appointments";
 import { GetServerSidePropsContext } from "next";
 import { getCookie } from "cookies-next";
 
 // services
-import { GET_ALL_APPOINTMENTS } from "@/services/apiUrl";
+import { GET_ALL_APPOINTMENTS } from "services/apiUrl";
 
 // types
 import { UserCookieType } from "types/cookies";

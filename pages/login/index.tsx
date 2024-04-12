@@ -5,19 +5,19 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 // components
-import Loader from "@/components/uiElements/loader";
+import Loader from "components/uiElements/loader";
 
 // context
-import { useStateValue } from "@/context/StateProvider";
+import { useStateValue } from "context/StateProvider";
 
 // services
-import { loginUser } from "@/services/auth";
+import { loginUser } from "services/auth";
 
 // utils
-import { saveCookie } from "@/utils/storageHelper";
+import { saveCookie } from "utils/storageHelper";
 
 // assets
-import { Google, AppleLogo, EmailIcon, Lock } from "@/assets/icons/index";
+import { Google, AppleLogo, EmailIcon, Lock } from "assets/icons/index";
 
 const Login = () => {
   const router = useRouter();

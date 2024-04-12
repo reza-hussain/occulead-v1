@@ -6,13 +6,13 @@ import Header from "components/uiElements/header";
 import Container from "components/layouts/container";
 
 // context
-import { useStateValue } from "@/context/StateProvider";
+import { useStateValue } from "context/StateProvider";
 
 // utils
-import { saveCookie } from "@/utils/storageHelper";
+import { saveCookie } from "utils/storageHelper";
 
 // services
-import { getUser } from "@/services/user";
+import { getUser } from "services/user";
 import Sidebar from "./sidebar";
 
 const Layout = ({ children }: { children: React.JSX.Element }) => {

@@ -4,7 +4,7 @@ import {
   SendRequestArgs,
   SuccessResponse
 } from "types/axiosTypes";
-import { getCookie } from "@/utils/storageHelper";
+import { getCookie } from "utils/storageHelper";
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 
 export const sendRequest = async (

@@ -1,4 +1,4 @@
-import DownloadFile from "@/app/components/Table/DownloadFile";
+import DownloadFile from "app/components/Table/DownloadFile";
 
 export const paymentData = [
   {

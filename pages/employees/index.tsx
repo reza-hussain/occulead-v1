@@ -1,4 +1,4 @@
-import EmployeesContainer from "@/containers/employees";
+import EmployeesContainer from "containers/employees";
 import React from "react";
 
 const Page = () => {

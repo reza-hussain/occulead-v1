@@ -6,12 +6,12 @@ import { useRouter } from "next/router";
 
 // components
 import Input from "components/formElements/Input";
-import Select from "@/components/formElements/Select";
-import Button from "@/components/uiElements/button";
-import ImageUpload from "@/components/formElements/ImageUpload";
+import Select from "components/formElements/Select";
+import Button from "components/uiElements/button";
+import ImageUpload from "components/formElements/ImageUpload";
 
 // services
-import { postCompany } from "@/services/company";
+import { postCompany } from "services/company";
 
 // types
 import { OnboardingFormValues } from "types/containers/onboarding/formTypes";

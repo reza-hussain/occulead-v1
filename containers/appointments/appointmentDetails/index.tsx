@@ -9,7 +9,7 @@ import Button from "components/uiElements/button";
 import { getPdfUrl } from "components/uiElements/reactPdfRenderer";
 
 // context
-import { useStateValue } from "@/context/StateProvider";
+import { useStateValue } from "context/StateProvider";
 
 // constants
 import { appointmentColumns } from "constants/table/appointments";
@@ -22,7 +22,7 @@ import { updatePayment } from "services/appointment";
 import { AppointmentDetailsType } from "types/containers/appointments/appointmentDetails";
 
 // assets
-import ArrowDown from "@/assets/components/ArrowDown";
+import ArrowDown from "assets/components/ArrowDown";
 
 interface ComponentProps {
   appointment: AppointmentDetailsType;

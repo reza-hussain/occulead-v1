@@ -3,9 +3,9 @@ import { GetServerSidePropsContext } from "next";
 import { getCookie } from "cookies-next";
 
 // services
-import { GET_STRIPE_SESSION_SUCCESS, GET_USER } from "@/services/apiUrl";
-import ClinicPackages from "@/containers/subscription/clinic";
-import Success from "@/containers/subscription/success";
+import { GET_STRIPE_SESSION_SUCCESS, GET_USER } from "services/apiUrl";
+import ClinicPackages from "containers/subscription/clinic";
+import Success from "containers/subscription/success";
 
 const Subscription = (props: any) => {
   return props?.stripe ? <Success /> : <ClinicPackages />;

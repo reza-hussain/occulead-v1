@@ -11,7 +11,7 @@ import {
 } from "@react-pdf/renderer";
 import moment from "moment";
 
-// import img from "@/assets/images/logo.png";
+// import img from "assets/images/logo.png";
 // import { useState} from "react";
 
 // Some styles are directly used and some through this object

@@ -1,4 +1,4 @@
-import Companies from "@/containers/clinic/companies";
+import Companies from "containers/clinic/companies";
 import React from "react";
 
 const Page = () => {

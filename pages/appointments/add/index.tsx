@@ -3,7 +3,7 @@ import { GetServerSidePropsContext } from "next";
 import { getCookie } from "cookies-next";
 
 // containers
-import AddAppointmentContainer from "@/containers/appointments/add";
+import AddAppointmentContainer from "containers/appointments/add";
 
 // types
 import { UserCookieType } from "types/cookies";

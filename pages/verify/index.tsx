@@ -1,4 +1,4 @@
-import { VERIFY_EMAIL } from "@/services/apiUrl";
+import { VERIFY_EMAIL } from "services/apiUrl";
 import { GetServerSidePropsContext } from "next";
 import React from "react";
 

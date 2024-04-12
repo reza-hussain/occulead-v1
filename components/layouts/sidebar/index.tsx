@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import SidebarItem from "components/layouts/sidebar/Item";
 
 // constants
-import { clinicSidebar, companySidebar } from "@/constants/sidebarItems";
+import { clinicSidebar, companySidebar } from "constants/sidebarItems";
 
 // assets
 import ThreeDots from "assets/components/ThreeDots";

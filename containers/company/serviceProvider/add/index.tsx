@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 
 // components
-import SubContainer from "@/components/layouts/subContainer";
-import InfoCard from "@/components/uiElements/infoCard";
+import SubContainer from "components/layouts/subContainer";
+import InfoCard from "components/uiElements/infoCard";
 
 // context
-import { useStateValue } from "@/context/StateProvider";
+import { useStateValue } from "context/StateProvider";
 
 // services
-import { getFilteredClinics } from "@/services/company";
+import { getFilteredClinics } from "services/company";
 import { ClinicObjectType } from "types/axiosTypes";
 import RequestModal from "./RequestModal";
 

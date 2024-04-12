@@ -4,7 +4,7 @@ import React from "react";
 import EmployeeForm from "containers/employees/add/EmployeeForm";
 
 // components
-import SubContainer from "@/components/layouts/subContainer";
+import SubContainer from "components/layouts/subContainer";
 
 const AddEmployeeContainer = () => {
   return (

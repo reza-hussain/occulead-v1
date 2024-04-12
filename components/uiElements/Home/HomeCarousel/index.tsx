@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 
-import banner1 from "@/assets/images/banner1.jpg";
-import banner2 from "@/assets/images/banner2.jpg";
+import banner1 from "assets/images/banner1.jpg";
+import banner2 from "assets/images/banner2.jpg";
 
 import "@splidejs/splide/css";
 

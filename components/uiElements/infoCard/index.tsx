@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import type * as CSS from "csstype";
-import ArrowDown from "@/assets/components/ArrowDown";
+import ArrowDown from "assets/components/ArrowDown";
 
 // types
 import { ClinicObjectType } from "types/axiosTypes";

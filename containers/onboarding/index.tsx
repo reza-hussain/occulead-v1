@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 // containers
-import UserType from "@/containers/onboarding/formstep/UserType";
-import ClinicDetails from "@/containers/onboarding/formstep/Clinics/ClinicDetails";
+import UserType from "containers/onboarding/formstep/UserType";
+import ClinicDetails from "containers/onboarding/formstep/Clinics/ClinicDetails";
 
 // types
 import { OnboardingFormValues } from "types/containers/onboarding/formTypes";

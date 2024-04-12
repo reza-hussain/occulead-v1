@@ -1,5 +1,5 @@
-import ArrowDown from "@/app/components/Icons/ArrowDown";
-import Status from "@/app/components/Table/Status";
+import ArrowDown from "app/components/Icons/ArrowDown";
+import Status from "app/components/Table/Status";
 
 export const invoicesTable = [
   {

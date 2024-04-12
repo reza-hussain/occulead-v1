@@ -1,4 +1,4 @@
-import ServiceProvider from "@/containers/company/serviceProvider";
+import ServiceProvider from "containers/company/serviceProvider";
 import React from "react";
 
 const Page = () => {

@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 
 // components
-import SubContainer from "@/components/layouts/subContainer";
-import Table from "@/components/uiElements/table";
-import Status from "@/components/uiElements/table/status";
+import SubContainer from "components/layouts/subContainer";
+import Table from "components/uiElements/table";
+import Status from "components/uiElements/table/status";
 
 // constants
-import { appointmentColumns } from "@/constants/table/appointments";
+import { appointmentColumns } from "constants/table/appointments";
 
 // types
 import { UserCookieType } from "types/cookies";
-import ArrowDown from "@/assets/components/ArrowDown";
+import ArrowDown from "assets/components/ArrowDown";
 import { useRouter } from "next/navigation";
 
 interface ComponentProps {

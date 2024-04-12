@@ -1,5 +1,5 @@
-import Button from "@/app/components/uiElements/Button";
-import { getClinics, updateClinicStatus } from "@/app/services/clinic";
+import Button from "app/components/uiElements/Button";
+import { getClinics, updateClinicStatus } from "app/services/clinic";
 
 interface StatusProps {
   status: string;

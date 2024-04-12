@@ -4,17 +4,17 @@ import React, { useMemo, useState } from "react";
 
 import Input from "components/formElements/Input";
 import ImageUpload from "components/formElements/ImageUpload";
-import MultiImageUpload from "@/components/formElements/MultiImageUpload";
+import MultiImageUpload from "components/formElements/MultiImageUpload";
 // import Dropdown from "components/formElements/Dropdown";
 
 import { Country, City, State } from "country-state-city";
-import Select from "@/components/formElements/Select";
+import Select from "components/formElements/Select";
 import { OnboardingFormValues } from "types/containers/onboarding/formTypes";
-import TextArea from "@/components/formElements/TextArea";
-import Button from "@/components/uiElements/button";
-import { postClinic } from "@/services/clinic";
+import TextArea from "components/formElements/TextArea";
+import Button from "components/uiElements/button";
+import { postClinic } from "services/clinic";
 import { useRouter } from "next/router";
-import { useStateValue } from "@/context/StateProvider";
+import { useStateValue } from "context/StateProvider";
 
 interface ComponentProps {
   handleBack: () => void;

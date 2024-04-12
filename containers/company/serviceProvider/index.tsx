@@ -2,20 +2,20 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 // components
-import SubContainer from "@/components/layouts/subContainer";
-import Button from "@/components/uiElements/button";
-import Table from "@/components/uiElements/table";
+import SubContainer from "components/layouts/subContainer";
+import Button from "components/uiElements/button";
+import Table from "components/uiElements/table";
 
 // context
-import { useStateValue } from "@/context/StateProvider";
+import { useStateValue } from "context/StateProvider";
 
 // constants
-import { serviceProviderColumns } from "@/constants/table/company/serviceProviders";
+import { serviceProviderColumns } from "constants/table/company/serviceProviders";
 
 // services
-import { getMyClinics } from "@/services/company";
+import { getMyClinics } from "services/company";
 import { ClinicObjectType } from "types/axiosTypes";
-import Status from "@/components/uiElements/table/status";
+import Status from "components/uiElements/table/status";
 
 const ServiceProvider = () => {
   const [clinics, setClinics] = useState<ClinicObjectType[]>([]);

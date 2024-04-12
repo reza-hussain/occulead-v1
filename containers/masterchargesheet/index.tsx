@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 
 // components
-import SubContainer from "@/components/layouts/subContainer";
-import Button from "@/components/uiElements/button";
-import Table from "@/components/uiElements/table";
-import GetServiceModal from "@/components/modals/masterchargesheet/GetServiceModal";
+import SubContainer from "components/layouts/subContainer";
+import Button from "components/uiElements/button";
+import Table from "components/uiElements/table";
+import GetServiceModal from "components/modals/masterchargesheet/GetServiceModal";
 
 // constants
-import { masterChargeColumns } from "@/constants/table/clinic/masterChargeSheet";
+import { masterChargeColumns } from "constants/table/clinic/masterChargeSheet";
 
 // services
-import { getClinicServices } from "@/services/clinic";
+import { getClinicServices } from "services/clinic";
 
 const MasterChargeSheet = () => {
   const [servicesRow, setServicesRow] = useState([]);

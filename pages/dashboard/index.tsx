@@ -3,9 +3,9 @@ import { GetServerSidePropsContext } from "next";
 import { getCookie } from "cookies-next";
 
 // containers
-import ClinicDashboard from "@/containers/dashboard/clinic";
-import CompanyDashboard from "@/containers/dashboard/company";
-import { GET_ALL_APPOINTMENTS } from "@/services/apiUrl";
+import ClinicDashboard from "containers/dashboard/clinic";
+import CompanyDashboard from "containers/dashboard/company";
+import { GET_ALL_APPOINTMENTS } from "services/apiUrl";
 import { AppointmentDetailsType } from "types/containers/appointments/appointmentDetails";
 
 type ServerProps = {

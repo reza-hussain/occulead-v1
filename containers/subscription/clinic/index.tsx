@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { packages } from "constants/packages";
 
 // services
-import { createPayment, getStripeProducts } from "@/services/stripe";
+import { createPayment, getStripeProducts } from "services/stripe";
 
 // assets
 import Tick from "assets/components/Tick";

@@ -1,7 +1,7 @@
 import React from "react";
 
 // components
-import Select from "@/components/formElements/Select";
+import Select from "components/formElements/Select";
 
 // types
 import { OptionType } from "types/components/formElements/Select";

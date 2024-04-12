@@ -8,11 +8,11 @@ import Select from "components/formElements/Select";
 import {
   getAllSpecialities,
   getServicesFromSpeciality
-} from "@/services/services";
-import { addServiceToClinic } from "@/services/clinic";
+} from "services/services";
+import { addServiceToClinic } from "services/clinic";
 
 // utils
-import { createDropdownOptions } from "@/utils/applicationHelper";
+import { createDropdownOptions } from "utils/applicationHelper";
 
 // types
 import { OptionType } from "types/components/formElements/Select";

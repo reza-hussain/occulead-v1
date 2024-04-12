@@ -2,18 +2,18 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 // components
-import SubContainer from "@/components/layouts/subContainer";
-import Button from "@/components/uiElements/button";
-import Table from "@/components/uiElements/table";
+import SubContainer from "components/layouts/subContainer";
+import Button from "components/uiElements/button";
+import Table from "components/uiElements/table";
 
 // context
-import { useStateValue } from "@/context/StateProvider";
+import { useStateValue } from "context/StateProvider";
 
 // constants
-import { employeesColumns } from "@/constants/table/company/employees";
+import { employeesColumns } from "constants/table/company/employees";
 
 // services
-import { getEmployees } from "@/services/employee";
+import { getEmployees } from "services/employee";
 import moment from "moment";
 
 const EmployeesContainer = () => {

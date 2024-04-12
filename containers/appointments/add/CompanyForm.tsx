@@ -6,17 +6,17 @@ import Select from "components/formElements/Select";
 import Input from "components/formElements/Input";
 import { companyPaymentBy, visitorTypeDropdown } from "constants/dropdowns";
 import DatePicker from "components/formElements/DatePicker";
-import MultiSelect from "@/components/formElements/MultiSelect";
-import Button from "@/components/uiElements/button";
+import MultiSelect from "components/formElements/MultiSelect";
+import Button from "components/uiElements/button";
 
 // context
-import { useStateValue } from "@/context/StateProvider";
+import { useStateValue } from "context/StateProvider";
 
 // services
-import { getApprovedClinics } from "@/services/company";
-import { getEmployees } from "@/services/employee";
-import { getClinicServices } from "@/services/clinic";
-import { createAppointment } from "@/services/appointment";
+import { getApprovedClinics } from "services/company";
+import { getEmployees } from "services/employee";
+import { getClinicServices } from "services/clinic";
+import { createAppointment } from "services/appointment";
 
 // assets
 import Trash from "assets/components/Trash";

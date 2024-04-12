@@ -1,8 +1,8 @@
-import ArrowDown from "@/assets/components/ArrowDown";
-import Card from "@/components/uiElements/dashboard/InsightCard";
-import Table from "@/components/uiElements/table";
-import Status from "@/components/uiElements/table/status";
-import { appointmentColumns } from "@/constants/table/appointments";
+import ArrowDown from "assets/components/ArrowDown";
+import Card from "components/uiElements/dashboard/InsightCard";
+import Table from "components/uiElements/table";
+import Status from "components/uiElements/table/status";
+import { appointmentColumns } from "constants/table/appointments";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 

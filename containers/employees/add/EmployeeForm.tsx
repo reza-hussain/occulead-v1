@@ -8,9 +8,9 @@ import Input from "components/formElements/Input";
 import DatePicker from "components/formElements/DatePicker";
 
 // services
-import { postEmployee } from "@/services/employee";
-import Button from "@/components/uiElements/button";
-import ImageUpload from "@/components/formElements/ImageUpload";
+import { postEmployee } from "services/employee";
+import Button from "components/uiElements/button";
+import ImageUpload from "components/formElements/ImageUpload";
 
 const initialFormValues = {
   firstName: "",

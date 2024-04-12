@@ -1,13 +1,13 @@
 "use client";
 // import bannerImg from "public/assets/images/banner-img.png";
-// import trustedBy from "@/assets/images/Trusted-By.png";
+// import trustedBy from "assets/images/Trusted-By.png";
 import Carousel from "components/uiElements/Home/HomeCarousel";
 import HomeCard from "components/uiElements/Home/HomeCard";
 import Search from "assets/components/Search";
 
-import image1 from "@/assets/images/image1.png";
-import image2 from "@/assets/images/image2.png";
-import image3 from "@/assets/images/image3.png";
+import image1 from "assets/images/image1.png";
+import image2 from "assets/images/image2.png";
+import image3 from "assets/images/image3.png";
 import HomeSpecialities from "components/uiElements/Home/HomeSpecialities";
 import HomeConsultation from "components/uiElements/Home/HomeConsultation";
 import HomeTestimonials from "components/uiElements/Home/HomeTestimonials";

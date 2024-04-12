@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 // components
-import Card from "@/components/uiElements/dashboard/InsightCard";
-import Table from "@/components/uiElements/table";
-import { appointmentColumns } from "@/constants/table/appointments";
-import Status from "@/components/uiElements/table/status";
-import ArrowDown from "@/assets/components/ArrowDown";
+import Card from "components/uiElements/dashboard/InsightCard";
+import Table from "components/uiElements/table";
+import { appointmentColumns } from "constants/table/appointments";
+import Status from "components/uiElements/table/status";
+import ArrowDown from "assets/components/ArrowDown";
 
 interface ComponentProps {
   tableData: any;

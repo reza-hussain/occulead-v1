@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 
 // context
-import { useStateValue } from "@/context/StateProvider";
+import { useStateValue } from "context/StateProvider";
 
 // components
 import FormModal from "components/modals/formModal";
-import DocumentUpload from "@/components/formElements/DocumentUpload";
+import DocumentUpload from "components/formElements/DocumentUpload";
 
 // services
 import { createContract } from "services/contracts";
