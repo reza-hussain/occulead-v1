@@ -1,0 +1,160 @@
+@import "/styles/variables.scss";
+@import "/styles/mixins.scss";
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+
+  label {
+    color: $color-grey-0;
+    @include font-medium(0.875rem);
+    line-height: 1.225rem;
+    padding-bottom: 0.25rem;
+    white-space: nowrap;
+  }
+
+  label p {
+    @include mandatoryStar();
+  }
+
+  .inputError {
+    position: absolute;
+    bottom: 0;
+    @include errorMessage();
+  }
+
+  input {
+    @include theme-transition();
+    width: 100%;
+    outline: none;
+    border-radius: 0.4375rem;
+    border: 1px solid var(--input-border-color);
+    background: var(--bg-color);
+    padding: 0.625rem 1rem;
+    color: var(--input-text-color);
+    @include font-medium(1rem);
+    line-height: 1.375rem;
+    margin-bottom: 1rem;
+
+    &.inputSidebar {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+
+    &::placeholder {
+      @include theme-transition();
+      color: #c2cacc;
+      @include font-medium(1rem);
+      line-height: 1.375rem;
+    }
+
+    &:focus {
+      border: 1px solid var(--active-day-bg) !important;
+    }
+  }
+
+  .errorInput {
+    border: 1px solid var(--store-card-percentage-text-color);
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    label {
+      @include input-mobile-label();
+    }
+    input {
+      font-size: 0.875rem;
+      &::placeholder {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+.inputWrapperDisable {
+  label {
+    color: var(--disable-color-label);
+  }
+  input {
+    border: 1px solid var(--disable-color-border-b4);
+    background: var(--disable-color-background-b2);
+    color: var(--disable-color-input-color-b4);
+  }
+}
+
+.inputContainer {
+  position: relative;
+  @include d-flex(flex-start);
+}
+
+.misc {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rupee::before {
+  content: "₹";
+  position: absolute;
+  top: 0 !important;
+  bottom: 0;
+  left: 1rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile::before {
+  @include font-medium(1rem);
+  content: "+91";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -2px;
+  margin: auto;
+  bottom: 0;
+  margin-bottom: 1rem;
+  left: 0.8rem;
+}
+.bar::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeedf0;
+  width: 1px;
+  height: 50%;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  left: 3rem;
+  background-color: var(--apps-border-color);
+}
+.disableInput {
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .mobile::before {
+    @include font-medium(0.875rem);
+    line-height: 1.375rem;
+    top: 31px;
+  }
+  .bar::before {
+    top: -2px;
+  }
+}
