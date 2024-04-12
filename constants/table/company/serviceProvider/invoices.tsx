@@ -1,6 +1,3 @@
-import ArrowDown from "components/Icons/ArrowDown";
-import Status from "components/Table/Status";
-
 export const invoicesTable = [
   {
     invoiceNo: 0,
@@ -47,55 +44,55 @@ export const invoicesTable = [
   }
 ];
 
-export const invoicesColumns = [
-  {
-    key: "invoiceNo",
-    dataIndex: "invoiceNo",
-    title: "Invoice No."
-  },
-  {
-    key: "description",
-    dataIndex: "description",
-    title: "Description"
-  },
-  {
-    key: "invoiceDate",
-    dataIndex: "invoiceDate",
-    title: "Invoice Date"
-  },
-  {
-    key: "totalAmount",
-    dataIndex: "totalAmount",
-    title: "Total Amount"
-  },
-  {
-    key: "paid",
-    dataIndex: "paid",
-    title: "Paid"
-  },
-  {
-    key: "totalOutstanding",
-    dataIndex: "totalOutstanding",
-    title: "Total Outstanding"
-  },
-  {
-    key: "status",
-    dataIndex: "status",
-    title: "Status",
-    render: (text: string) => <Status status={text} />
-  },
-  {
-    key: "menu",
-    dataIndex: "menu",
-    title: "",
-    render: (_: string, item: any) => (
-      <ArrowDown className="-rotate-90 cursor-pointer" id={item.id} />
-    ),
-    cellStyles: {
-      width: "50%",
-      position: "absolute",
-      left: 0,
-      top: 0
-    }
-  }
-];
+// export const invoicesColumns = [
+//   {
+//     key: "invoiceNo",
+//     dataIndex: "invoiceNo",
+//     title: "Invoice No."
+//   },
+//   {
+//     key: "description",
+//     dataIndex: "description",
+//     title: "Description"
+//   },
+//   {
+//     key: "invoiceDate",
+//     dataIndex: "invoiceDate",
+//     title: "Invoice Date"
+//   },
+//   {
+//     key: "totalAmount",
+//     dataIndex: "totalAmount",
+//     title: "Total Amount"
+//   },
+//   {
+//     key: "paid",
+//     dataIndex: "paid",
+//     title: "Paid"
+//   },
+//   {
+//     key: "totalOutstanding",
+//     dataIndex: "totalOutstanding",
+//     title: "Total Outstanding"
+//   },
+//   {
+//     key: "status",
+//     dataIndex: "status",
+//     title: "Status",
+//     render: (text: string) => <Status status={text} />
+//   },
+//   {
+//     key: "menu",
+//     dataIndex: "menu",
+//     title: "",
+//     render: (_: string, item: any) => (
+//       <ArrowDown className="-rotate-90 cursor-pointer" id={item.id} />
+//     ),
+//     cellStyles: {
+//       width: "50%",
+//       position: "absolute",
+//       left: 0,
+//       top: 0
+//     }
+//   }
+// ];

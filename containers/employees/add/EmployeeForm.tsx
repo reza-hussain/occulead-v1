@@ -21,7 +21,7 @@ const initialFormValues = {
   email: "",
   phone: "",
   SSN: "",
-  dob: "",
+  dob: null,
   primaryAddress: "",
   secondaryAddress: "",
   zipCode: "",
@@ -38,7 +38,7 @@ const EmployeeForm = () => {
 
   const countries = useMemo(() => Country.getAllCountries(), []);
 
-  const updatedCountries = countries.map((country) => ({
+  const updatedCountries = countries.map((country: any) => ({
     label: country?.name,
     value: country?.isoCode,
     ...country
@@ -51,7 +51,7 @@ const EmployeeForm = () => {
   };
 
   const updatedStates = (countryId: string) => {
-    return State.getStatesOfCountry(countryId).map((state) => ({
+    return State.getStatesOfCountry(countryId).map((state: any) => ({
       label: state?.name,
       value: state?.isoCode,
       iso: state?.isoCode
@@ -59,7 +59,7 @@ const EmployeeForm = () => {
   };
 
   const updatedCities = (countryId: string, stateId: string) => {
-    return City.getCitiesOfState(countryId, stateId).map((city) => ({
+    return City.getCitiesOfState(countryId, stateId).map((city: any) => ({
       label: city?.name,
       value: city?.name
     }));
@@ -136,6 +136,7 @@ const EmployeeForm = () => {
           />
 
           <DatePicker
+            value={formValues?.dob}
             label="Date of Birth"
             className="basis-[30%] text-gray-400"
             onChange={(date: Date) =>

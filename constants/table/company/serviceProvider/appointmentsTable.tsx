@@ -1,5 +1,3 @@
-import Status from "components/Table/Status";
-
 export const appointmentDatesTable = [
   {
     id: 0,
@@ -24,29 +22,5 @@ export const appointmentDatesTable = [
     description: "Favourite",
     appointmentDate: "12-08-2023",
     status: "approved"
-  }
-];
-
-export const appointmentDatesColumns = [
-  {
-    key: "id",
-    dataIndex: "id",
-    title: "Sr. No"
-  },
-  {
-    key: "description",
-    dataIndex: "description",
-    title: "Description"
-  },
-  {
-    key: "appointmentDate",
-    dataIndex: "appointmentDate",
-    title: "Appointment Date"
-  },
-  {
-    key: "status",
-    dataIndex: "status",
-    title: "Status",
-    render: (text: string) => <Status status={text} />
   }
 ];
