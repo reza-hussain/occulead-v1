@@ -56,7 +56,7 @@ const ClinicPackages = () => {
 const Packages = ({ item }: { item: any }) => {
   const handleSubscription = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-
+    console.log({ item });
     try {
       const { response, error } = await createPayment({
         priceId: item.id

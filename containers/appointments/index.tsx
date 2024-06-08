@@ -12,16 +12,33 @@ import { appointmentColumns } from "constants/table/appointments";
 import { UserCookieType } from "types/cookies";
 import ArrowDown from "assets/components/ArrowDown";
 import { useRouter } from "next/navigation";
+import Button from "components/uiElements/button";
 
 interface ComponentProps {
   data: any;
   user: UserCookieType;
 }
 
+const companyColumns = [
+  {
+    title: "Clinic",
+    column: "clinic"
+  }
+];
+
+const clinicColumns = [
+  {
+    title: "Company",
+    column: "company"
+  }
+];
+
 const AppointmentContainer: React.FC<ComponentProps> = ({ data, user }) => {
   const [appointmentRow, setAppointmentRow] = useState([]);
 
   const router = useRouter();
+
+  const isCompany = user?.userType === "company";
 
   useEffect(() => {
     const rowData = data?.map((item: any, index: number) => ({
@@ -50,29 +67,27 @@ const AppointmentContainer: React.FC<ComponentProps> = ({ data, user }) => {
     setAppointmentRow(rowData);
   }, [data]);
 
-  const companyColumns = [
-    {
-      title: "Clinic",
-      column: "clinic"
-    }
-  ];
-
-  const clinicColumns = [
-    {
-      title: "Company",
-      column: "company"
-    }
-  ];
-
   const columnData = [...appointmentColumns];
-  user?.userType === "company"
+  isCompany
     ? columnData?.splice(1, 0, ...companyColumns)
     : columnData?.splice(1, 0, ...clinicColumns);
 
-  console.log({ columnData });
+  const HeadingButtons = () => (
+    <div className="flex justify-center items-center gap-[12px]">
+      <Button
+        className="bg-[#11a1fd] p-[10px] text-[14px] rounded-md"
+        onClick={() => router.push("/appointments/add")}
+        label="New Appointment"
+      />
+    </div>
+  );
 
   return (
-    <SubContainer title="Appointments">
+    <SubContainer
+      title="Appointments"
+      showHeaderSiblings={isCompany}
+      headerSiblings={<HeadingButtons />}
+    >
       <Table rowData={appointmentRow} columnData={columnData} />
     </SubContainer>
   );

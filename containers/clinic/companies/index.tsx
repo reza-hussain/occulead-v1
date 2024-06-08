@@ -60,6 +60,8 @@ const Companies = () => {
   const fetchData = async () => {
     const { response, error } = await getMyCompanies();
 
+    console.log({ response });
+
     if (response) {
       const rowData = response?.data?.map((company: any, idx: number) => ({
         srNo: `${idx + 1}`,
@@ -97,6 +99,7 @@ const Companies = () => {
     );
 
     setFilteredCompanies(filteredData);
+
     // eslint-disable-next-line
   }, [activeTab, companiesRow]);
 

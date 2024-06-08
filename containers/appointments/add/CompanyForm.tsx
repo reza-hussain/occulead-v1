@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import { useRouter } from "next/router";
 
 // components
 import Select from "components/formElements/Select";
@@ -69,9 +70,10 @@ const CompanyForm = () => {
       value: ""
     }
   ]);
-
+  const router = useRouter();
   const { currentUser } = useStateValue();
   const [count, setCount] = useState(0);
+  const [loading, setLoading] = useState(false);
 
   // USE-EFFECTS
 
@@ -281,6 +283,7 @@ const CompanyForm = () => {
 
   const onFormSubmit = async (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
+    setLoading(true);
     const payload: AppointmentPayload[] = [];
     formValues?.employees?.map((employee) => {
       employee?.service?.map((service) =>
@@ -300,9 +303,12 @@ const CompanyForm = () => {
       );
     });
 
-    const appointment = await createAppointment(payload);
+    const { response } = await createAppointment(payload);
+    setLoading(false);
 
-    console.log({ appointment });
+    if (response?.status === 200) {
+      router.push("../appointments");
+    }
   };
 
   return (
@@ -458,7 +464,10 @@ const CompanyForm = () => {
       <div className="w-[90%] flex justify-end items-stretch py-[22px] gap-[20px]">
         <Button label="Cancel" />
 
-        <Button onClick={onFormSubmit} label="Request appointment" />
+        <Button
+          onClick={onFormSubmit}
+          label={loading ? "Loading..." : "Request appointment"}
+        />
       </div>
     </form>
   );

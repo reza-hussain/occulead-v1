@@ -2,6 +2,9 @@ import { useMemo, useState } from "react";
 import { useRouter } from "next/router";
 import { City, Country, State } from "country-state-city";
 
+// context
+import { useStateValue } from "context/StateProvider";
+
 // components
 import Select from "components/formElements/Select";
 import Input from "components/formElements/Input";
@@ -33,6 +36,7 @@ const initialFormValues = {
 
 const EmployeeForm = () => {
   const [formValues, setFormValues] = useState(initialFormValues);
+  const { currentUser } = useStateValue();
 
   const router = useRouter();
 
@@ -45,8 +49,6 @@ const EmployeeForm = () => {
   }));
 
   const handleFormChange = (value: string, key?: string) => {
-    console.log({ value, key });
-
     setFormValues({ ...formValues, [key as string]: value });
   };
 
@@ -67,9 +69,12 @@ const EmployeeForm = () => {
 
   const onFormSubmit = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    const response = await postEmployee(formValues);
+    const { response } = await postEmployee({
+      ...formValues,
+      company: currentUser
+    });
 
-    response && router.push("../employees");
+    response?.status === 200 && router.push("../employees");
   };
   return (
     <form className="w-full flex flex-col justify-start items-center bg-white gap-[24px] p-[32px] rounded-md">

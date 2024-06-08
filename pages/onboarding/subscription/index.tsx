@@ -8,6 +8,7 @@ import ClinicPackages from "containers/subscription/clinic";
 import Success from "containers/subscription/success";
 
 const Subscription = (props: any) => {
+  console.log({ props });
   return props?.stripe ? <Success /> : <ClinicPackages />;
 };
 
@@ -18,19 +19,17 @@ export const getServerSideProps = async ({
   res,
   query
 }: GetServerSidePropsContext) => {
-  const cookies = getCookie("user", { req, res });
   const token = getCookie("token", { req, res });
 
   const sessionID = query.session_id;
 
   try {
-    const user = JSON.parse(cookies as string);
-    const response = await fetch(`${GET_USER}/${user?._id}`, {
+    const response = await fetch(`${GET_USER}`, {
       headers: {
         Authorization: `Bearer ${token}`
       }
     });
-
+    console.log({ response });
     const stripeResponse = sessionID
       ? await fetch(`${GET_STRIPE_SESSION_SUCCESS}/${sessionID}`, {
           headers: {
@@ -41,7 +40,7 @@ export const getServerSideProps = async ({
 
     const data = await response?.json();
     const stripeData = await stripeResponse?.json();
-
+    console.log({ stripeData });
     return {
       props: {
         success: true,
@@ -50,6 +49,8 @@ export const getServerSideProps = async ({
       }
     };
   } catch (error) {
+    console.log({ error });
+
     return {
       props: {
         err: JSON.stringify(error),

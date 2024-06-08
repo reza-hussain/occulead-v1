@@ -1,13 +1,26 @@
 import { NextRequest, NextResponse } from "next/server";
+import { GET_USER } from "services/apiUrl";
 
-export default function middleware(request: NextRequest) {
+export default async function middleware(request: NextRequest) {
   const pathname = request?.nextUrl?.pathname;
+  console.log({ pathname });
 
   const response = NextResponse.next();
-  const user = request?.cookies?.get("user")?.value
-    ? JSON.parse(request?.cookies?.get("user")?.value ?? "")
+  const token = request?.cookies?.get("token")?.value
+    ? request?.cookies?.get("token")?.value ?? ""
     : null;
 
+  let res = null;
+
+  if (token) {
+    res = await fetch(`${GET_USER}`, {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    });
+  }
+
+  const user = (await res?.json())?.data as any;
   const expiryTime = request?.cookies?.get("expiryTime")?.value;
 
   const unprotectedURLs = ["/login", "/register", "/"];
@@ -22,6 +35,8 @@ export default function middleware(request: NextRequest) {
       return NextResponse.redirect(new URL("/login", request?.url));
     }
   }
+
+  console.log({ user });
 
   if (user) {
     if (user?.onboarding === 1 && pathname !== "/onboarding") {
